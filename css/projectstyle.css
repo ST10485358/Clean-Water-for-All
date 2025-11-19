@@ -1,0 +1,183 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: 'Open Sans', sans-serif;
+font-size: 1rem;
+line-height: 1.6;
+color: #333;
+background-color: #f8f9fa;
+}
+h1 {
+font-family: Arial, sans-serif;
+font-size: 2.5rem;
+font-weight: 700;
+color: #003366;
+text-align: center;
+margin: 2rem 0;
+letter-spacing: 1px;
+}
+
+figcaption {
+font-family: 'Open Sans', sans-serif;
+font-size: 1rem;
+font-weight: 400;
+color: #555;
+text-align: center;
+margin-top: 0.5rem;
+padding: 0 1rem;
+}
+nav {
+background-color: #003366;
+padding: 1rem 0;
+}
+
+nav div:first-child {
+display: inline-block;
+margin-left: 2rem;
+}
+
+nav img {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+}
+
+nav div:last-child {
+display: inline-block;
+float: right;
+margin-right: 2rem;
+}
+
+nav ul {
+list-style-type: none;
+}
+
+nav ul li {
+display: inline-block;
+margin-left: 1.5rem;
+}
+
+nav ul li a {
+color: white;
+text-decoration: none;
+font-family: Arial, sans-serif;
+font-weight: 600;
+padding: 0.5rem 1rem;
+border-radius: 4px;
+}
+
+nav ul li a:hover {
+background-color: #00509e;
+color: white;
+}
+main {
+max-width: 1200px;
+margin: 0 auto;
+padding: 2rem;
+}
+main {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+justify-items: center;
+}
+
+figure {
+background-color: white;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+max-width: 500px;
+}
+
+figure:hover {
+background-color: #00509e;
+color: white;
+}
+
+figure img {
+width: 100%;
+height: 300px;
+object-fit: cover;
+display: block;
+}
+footer {
+background-color: #003366;
+color: white;
+text-align: center;
+padding: 1.5rem 0;
+margin-top: 3rem;
+font-family: 'Open Sans', sans-serif;
+}
+
+footer p {
+font-size: 1rem;
+}
+@media (max-width: 768px) {
+h1 {
+font-size: 2rem;
+margin: 1.5rem 0;
+}
+
+nav div:first-child {
+display: block;
+text-align: center;
+margin: 0 auto 1rem;
+}
+
+nav div:last-child {
+display: block;
+float: none;
+text-align: center;
+margin: 0 auto;
+}
+
+nav ul li {
+display: block;
+margin: 0.5rem 0;
+}
+
+main {
+padding: 1rem;
+grid-template-columns: 1fr;
+}
+
+figure {
+max-width: 100%;
+}
+}
+
+@media (max-width: 480px) {
+h1 {
+font-size: 1.8rem;
+}
+
+nav ul li a {
+display: block;
+padding: 0.8rem;
+}
+
+main {
+padding: 0.5rem;
+}
+}
+@media print {
+nav, footer {
+display: none;
+}
+
+main {
+max-width: 100%;
+padding: 0;
+}
+
+figure {
+break-inside: avoid;
+box-shadow: none;
+margin-bottom: 1rem;
+}
+}
