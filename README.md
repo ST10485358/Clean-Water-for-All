@@ -32,3 +32,6 @@ I also struggled a bit with the design. I'm better at coding than I am at design
 
 ### Why I used this stack:
 As this was part of our Introduction to Web Development, we were expected to use plain HTML, then add CSS, then finish with JavaScript functionality in order to showcase we understood what was being taught.
+
+### WHAT I IMPROVED
+There were a few syntax errors that i fixed in all the web pages. I also added the logo in every page. I didn't have any references to include here.
